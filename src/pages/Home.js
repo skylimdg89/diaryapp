@@ -22,7 +22,6 @@ const Home = () => {
     console.log(curDate);
     const firstDay = new Date(curDate.getFullYear(), curDate.getMonth(), 1);
     const lastDay = new Date(curDate.getFullYear(), curDate.getMonth() + 1, 0);
-    // console.log(data.filter((it) => it.date >= firstDay && it.date <= lastDay));
     setData(
       diaryList.filter((it) => it.date >= firstDay && it.date <= lastDay)
     );
